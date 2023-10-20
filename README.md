@@ -2,7 +2,7 @@
 
 ## Trivial Torrent Client
 
-You need to implement the client part of the Trivial Torrent protocol. See Trivial Torrent protocol specification document for details (see section 2.3.1 of the specification document).
+You need to implement the client part of the Trivial Torrent protocol.
 
 Use the file `src/ttorrent.c`.
 
@@ -24,18 +24,6 @@ The `ttorrent` command shall be extended to work as follows:
 $ bin/ttorrent -l 8080 file.metainfo
 ~~~
 
-### Multi-client implementation strategies
-
-The server part can be implemented using two different strategies: employing a *forking server*, or employing *non-blocking sockets*.
-Employing non-blocking sockets can be *very* challenging. Follow one of the two approaches based on your personal preferences.
-**Follow the conservative approach if you are not sure which approach is best for you.**
-
-| Approach       | Description                                                                      |
-| :-             | :------------                                                                    |
-| *Conservative* | First implement the server employing a forking server model (mandatory; 70% grade), then upgrade the server to employ non-blocking sockets (optional; 30% grade). |
-| *Audacious*    | Implement *directly* a server employing non-blocking sockets (100% grade).       |
-
-Note: servers employing non-blocking sockets must employ a single process and must not employ threads.
 
 ## Practical Details
 
