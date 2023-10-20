@@ -14,7 +14,7 @@ $ bin/ttorrent file.metainfo
 
 ## Trivial Torrent Server
 
-Implement the server part of the Trivial Torrent protocol. See Trivial Torrent protocol specification document for details (see section 2.3.2 of the specification document).
+Implement the server part of the Trivial Torrent protocol.
 
 Use the file `src/ttorrent.c`.
 
